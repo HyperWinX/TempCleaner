@@ -1,0 +1,11 @@
+C:\Users\HyperWin\source\repos\TempCleaner\TempCleaner\bin\Release\TempCleaner.exe.config
+C:\Users\HyperWin\source\repos\TempCleaner\TempCleaner\bin\Release\TempCleaner.exe
+C:\Users\HyperWin\source\repos\TempCleaner\TempCleaner\bin\Release\TempCleaner.pdb
+C:\Users\HyperWin\source\repos\TempCleaner\TempCleaner\obj\Release\TempCleaner.csproj.AssemblyReference.cache
+C:\Users\HyperWin\source\repos\TempCleaner\TempCleaner\obj\Release\TempCleaner.csproj.SuggestedBindingRedirects.cache
+C:\Users\HyperWin\source\repos\TempCleaner\TempCleaner\obj\Release\TempCleaner.Form1.resources
+C:\Users\HyperWin\source\repos\TempCleaner\TempCleaner\obj\Release\TempCleaner.Properties.Resources.resources
+C:\Users\HyperWin\source\repos\TempCleaner\TempCleaner\obj\Release\TempCleaner.csproj.GenerateResource.cache
+C:\Users\HyperWin\source\repos\TempCleaner\TempCleaner\obj\Release\TempCleaner.csproj.CoreCompileInputs.cache
+C:\Users\HyperWin\source\repos\TempCleaner\TempCleaner\obj\Release\TempCleaner.exe
+C:\Users\HyperWin\source\repos\TempCleaner\TempCleaner\obj\Release\TempCleaner.pdb
