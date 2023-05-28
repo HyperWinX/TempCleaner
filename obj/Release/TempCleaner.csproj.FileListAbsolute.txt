@@ -18,3 +18,4 @@ E:\source\repos\TempCleaner\TempCleaner\obj\Release\TempCleaner.csproj.GenerateR
 E:\source\repos\TempCleaner\TempCleaner\obj\Release\TempCleaner.csproj.CoreCompileInputs.cache
 E:\source\repos\TempCleaner\TempCleaner\obj\Release\TempCleaner.exe
 E:\source\repos\TempCleaner\TempCleaner\obj\Release\TempCleaner.pdb
+E:\source\repos\TempCleaner\TempCleaner\obj\Release\TempCleaner.csproj.AssemblyReference.cache

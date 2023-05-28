@@ -1,10 +1,6 @@
 ﻿using System;
 using System.IO;
 using Microsoft.Win32;
-using System.Data;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TempCleaner
@@ -20,7 +16,7 @@ namespace TempCleaner
             try
             {
                 RegistryKey key = Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run", true);
-                key.SetValue("TempCleaner", "\"C:\\Program Files\\TempCleaner\\TempCleaner.exe -nogui\"");
+                key.SetValue("TempCleaner", "\"C:\\Program Files\\TempCleaner\\TempCleaner.exe\" -nogui");
                 key.Close();
             } catch
             {

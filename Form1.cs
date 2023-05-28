@@ -1,12 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TempCleaner
@@ -64,9 +59,9 @@ namespace TempCleaner
             if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
             {
                 listBox1.Items.Add(folderBrowserDialog1.SelectedPath);
-                string[] existingFolders = listBox1.Items.OfType<string>().ToArray();
-                existingFolders.Append(folderBrowserDialog1.SelectedPath).ToArray();
-                File.WriteAllLines("data", existingFolders);
+                List<string> existingFolders = listBox1.Items.OfType<string>().ToList();
+                existingFolders.Add(folderBrowserDialog1.SelectedPath);
+                File.WriteAllLines("data", existingFolders.ToArray());
                 UpdateList();
             }
         }
