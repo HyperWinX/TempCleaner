@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using Microsoft.Win32;
 using System.Data;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,18 @@ namespace TempCleaner
         [STAThread]
         static void Main()
         {
+            try
+            {
+                RegistryKey key = Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+                key.SetValue("TempCleaner", "\"C:\\Program Files\\TempCleaner\\TempCleaner.exe -nogui\"");
+                key.Close();
+            } catch
+            {
+                string caption = "Autorun setup error";
+                string text = "Cannot create autorun entry. Please add TempCleaner to autorun manually";
+                MessageBoxButtons btn = MessageBoxButtons.OK;
+                MessageBox.Show(text, caption, btn);
+            }
             string[] args = Environment.GetCommandLineArgs();
             if (args.Length == 1)
             {
@@ -25,13 +38,29 @@ namespace TempCleaner
             }
             if (args[1] == "-nogui")
             {
-                var form = new Form1();
                 string[] folders = File.ReadAllLines("data");
                 foreach (string folder in folders)
                 {
-                    form.RecursiveDelete(new DirectoryInfo(folder));
+                    Console.WriteLine(folder);
+                    RecursiveDelete(new DirectoryInfo(folder));
                 }
             }
+        }
+        internal static void RecursiveDelete(DirectoryInfo baseDir)
+        {
+            if (!baseDir.Exists)
+                return;
+            foreach (var dir in baseDir.EnumerateDirectories())
+            {
+                RecursiveDelete(dir);
+            }
+            var files = baseDir.GetFiles();
+            foreach (var file in files)
+            {
+                file.IsReadOnly = false;
+                file.Delete();
+            }
+            baseDir.Delete();
         }
     }
 }

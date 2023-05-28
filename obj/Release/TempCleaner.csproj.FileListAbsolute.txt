@@ -9,3 +9,12 @@ C:\Users\HyperWin\source\repos\TempCleaner\TempCleaner\obj\Release\TempCleaner.c
 C:\Users\HyperWin\source\repos\TempCleaner\TempCleaner\obj\Release\TempCleaner.csproj.CoreCompileInputs.cache
 C:\Users\HyperWin\source\repos\TempCleaner\TempCleaner\obj\Release\TempCleaner.exe
 C:\Users\HyperWin\source\repos\TempCleaner\TempCleaner\obj\Release\TempCleaner.pdb
+E:\source\repos\TempCleaner\TempCleaner\bin\Release\TempCleaner.exe.config
+E:\source\repos\TempCleaner\TempCleaner\bin\Release\TempCleaner.exe
+E:\source\repos\TempCleaner\TempCleaner\bin\Release\TempCleaner.pdb
+E:\source\repos\TempCleaner\TempCleaner\obj\Release\TempCleaner.Form1.resources
+E:\source\repos\TempCleaner\TempCleaner\obj\Release\TempCleaner.Properties.Resources.resources
+E:\source\repos\TempCleaner\TempCleaner\obj\Release\TempCleaner.csproj.GenerateResource.cache
+E:\source\repos\TempCleaner\TempCleaner\obj\Release\TempCleaner.csproj.CoreCompileInputs.cache
+E:\source\repos\TempCleaner\TempCleaner\obj\Release\TempCleaner.exe
+E:\source\repos\TempCleaner\TempCleaner\obj\Release\TempCleaner.pdb
